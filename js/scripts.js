@@ -8,6 +8,12 @@
 // 
 
 window.addEventListener('DOMContentLoaded', event => {
+    const quit_quiz = document.querySelector(".sexo");
+    const element69 = document.querySelector(".noshow");
+
+    quit_quiz.onclick = ()=>{
+        element69.style.display = "block";
+    }
 
     // Navbar shrink function
     var navbarShrink = function () {

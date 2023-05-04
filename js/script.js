@@ -2,7 +2,7 @@
 let questions = [
     {
     numb: 1,
-    photo: "assets/game/q1.png",
+    photo: "assets/game/q1.jpeg",
     explanation: "BBC is a well-known and reliable news channel. Although there were rumors about the status of Queen Elizabeth's health leading up to her death, her passing was covered by many well-known news sources around the world as she was a public figure. PS: Rumors are typically not found in large, reputable news channels. ",
     question: "Reliable source",
     answer: "True",
@@ -13,7 +13,7 @@ let questions = [
   },
     {
     numb: 2,
-    photo: "assets/game/q2.png",
+    photo: "assets/game/q2.jpeg",
     question: "Confirmation Bias and Phrasing",
     explanation: "The previous article contains leading vocabulary that favors a certain viewpoint when stating that 'Lockdowns ruined industries in America'.The wording subconsciously makes people associate lockdowns with something harmful, even though its purpose was to control covid spread at the time of the pandemic. This is an example of Confirmation Bias, the human tendency to search for, favor, and use information that confirms one's pre-existing views on a certain topic.",
     answer: "False",
@@ -71,7 +71,7 @@ let questions = [
 
    {
     numb: 7,
-    photo: "assets/game/q7.png",
+    photo: "assets/game/q7.jpeg",
     question: "KEEP An eye out FOR TYPOS AND grammatical errors",
     explanation: "In this article, there was a typo, instead of 'Obama' it should have read 'Osama' Even though the news was in a reliable channel, the error could result in misunderstandings about events. Poorly edited articles or news with frequent misspellings and grammatical errors is often a sign of fake news. PS: ex-president Obama is still alive",
     answer: "False",
@@ -125,11 +125,11 @@ continue_btn.onclick = ()=>{
     quiz_box.classList.add("activeQuiz"); //show quiz box
     showQuetions(0); //calling showQestions function
     queCounter(1); //passing 1 parameter to queCounter
-    startTimer(15); //calling startTimer function
+    startTimer(30); //calling startTimer function
     startTimerLine(0); //calling startTimerLine function
 }
 
-let timeValue =  15;
+let timeValue =  30;
 let que_count = 0;
 let que_numb = 1;
 let userScore = 0;
@@ -144,7 +144,7 @@ const quit_quiz = result_box.querySelector(".buttons .quit");
 restart_quiz.onclick = ()=>{
     quiz_box.classList.add("activeQuiz"); //show quiz box
     result_box.classList.remove("activeResult"); //hide result box
-    timeValue = 15; 
+    timeValue =30; 
     que_count = 0;
     que_numb = 1;
     userScore = 0;
